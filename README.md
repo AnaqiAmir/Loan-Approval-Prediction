@@ -9,6 +9,16 @@ The goal of this project is to develop a predictive model that can assess the li
 1) What loan characteristics (e.g., amount, interest rate) are most predictive of approval to help financial institutions optimize their portfolios?
 2) How can high-risk or suspicious applications be detected early?
 
+## Repo Structure
+```
+📂 bank-marketing-prediction
+├── README.md                 # Project documentation
+├── analysis.ipynb            # In depth EDA
+├── experiments.ipynb         # Data preprocessing, Feature Engineering, Feature Selection, Model Building
+├── final_report.ipynb        # Final report
+├── ...
+```
+
 ## Findings
 
 **Model Performance**
@@ -83,3 +93,10 @@ The goal of this project is to develop a predictive model that can assess the li
 * **Deeper analysis of flagged fraudulent applications**: Further investigation into the flagged applications could help identify common patterns or risk indicators associated with fraudulent behavior. By leveraging advanced anomaly detection techniques and clustering algorithms, financial institutions can enhance fraud prevention strategies and refine their approval criteria.
 
 * **Integrate loan default data for a more comprehensive risk assessment**: Combining this dataset with loan default records would allow for a dual-layer analysis—predicting both loan approval and the likelihood of default. This would enable financial institutions to optimize lending policies by not only approving loans efficiently but also ensuring that approved loans have a lower risk of default, ultimately reducing financial losses.
+
+* **Further model evaluation**: Upon submitting the model on Kaggle, it was found that the model scored an underperforming 86% on the AUC score on the private dataset. This indicates the current model has extremely overfitted the data and more regularization and generalization is needed to reflect unseen data.
+
+## References
+
+* [Kaggle Competition](https://www.kaggle.com/competitions/playground-series-s4e10/overview)
+* [My Kaggle Submission](https://www.kaggle.com/code/anaqiamir/loan-approval-final-report)
